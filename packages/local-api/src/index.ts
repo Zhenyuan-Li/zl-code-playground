@@ -12,6 +12,8 @@ export const serve = (
 ) => {
   const app = express();
 
+  app.use(createCellsRouter(filename, dir));
+
   if (useProxy) {
     app.use(
       createProxyMiddleware({
@@ -27,8 +29,6 @@ export const serve = (
     // So we need to use lerna to link local-client to local-api
     app.use(express.static(path.dirname(pkgPath)));
   }
-
-  app.use(createCellsRouter(filename, dir));
 
   return new Promise<void>((resolve, reject) => {
     app.listen(port, resolve).on('error', reject);
