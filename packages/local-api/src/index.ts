@@ -24,7 +24,7 @@ export const serve = (
     );
   } else {
     // absolute path to local-client in package
-    const pkgPath = require.resolve('local-client/build/index.html');
+    const pkgPath = require.resolve('@zl-jspg/local-client/build/index.html');
     // Naive solution, won't work: can't reference files between different pkg
     // So we need to use lerna to link local-client to local-api
     app.use(express.static(path.dirname(pkgPath)));
