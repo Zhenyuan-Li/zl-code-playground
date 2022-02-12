@@ -1,7 +1,7 @@
 {
   "name": "zl-jspg",
   "version": "1.0.1",
-  "description": "",
+  "description": "A smart code-editor for js & React. Also an interview question practice playground for Vincent.",
   "publishConfig": {
     "access": "public"
   },
@@ -9,6 +9,10 @@
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Zhenyuan-Li/zl-code-playground.git"
+  },
   "scripts": {
     "start": "tsc --watch --preserveWatchOutput",
     "prepublishOnly": "esbuild src/index.ts --platform=node --outfile=dist/index.js --bundle --minify --define:process.env.NODE_ENV=\\\"production\\\""
