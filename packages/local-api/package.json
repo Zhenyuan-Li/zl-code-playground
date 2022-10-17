@@ -1,6 +1,6 @@
 {
   "name": "@zl-jspg/local-api",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "",
   "publishConfig": {
     "access": "public"
@@ -23,7 +23,7 @@
     "typescript": "^4.5.5"
   },
   "dependencies": {
-    "@zl-jspg/local-client": "^1.0.2",
+    "@zl-jspg/local-client": "^1.1.0",
     "cors": "^2.8.5",
     "express": "^4.17.2",
     "http-proxy-middleware": "^2.0.3"
