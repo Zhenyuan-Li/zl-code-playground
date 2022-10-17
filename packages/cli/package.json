@@ -1,6 +1,6 @@
 {
   "name": "zl-jspg",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A smart code-editor for js & React. Also an interview question practice playground for Vincent.",
   "publishConfig": {
     "access": "public"
@@ -21,11 +21,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@zl-jspg/local-client": "^1.1.0"
+    "@zl-jspg/local-client": "^1.1.1"
   },
   "devDependencies": {
     "@types/node": "^17.0.16",
-    "@zl-jspg/local-api": "^1.1.0",
+    "@zl-jspg/local-api": "^1.1.1",
     "commander": "^9.0.0",
     "esbuild": "0.8.26",
     "typescript": "^4.5.5"
